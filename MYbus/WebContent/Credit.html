@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  margin-top:-25px;
+  margin-left:-10px;
+  margin-right:-10px;
+  background-image: url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80");
+  height:100%;
+  min-height:500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  max-width: 300px;
+  padding: 5px;
+  background-color:transparent;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] , input[type=date]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 12px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus ,input[type=date]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+<h1 class="bg-info" align = "center" class="text-warning" ><b>BOOK MY BUS</b></h1>
+ <div class="topnav">
+     <a href="Home.html">Home</a>
+      <a href="Cancel.html">CancelTicket</a>
+      <a href="BusInfo">About</a>
+       <a href="Bus.html">Logout</a>
+    
+    </div>
+  
+  
+  <form action="Succes.html" class="container" align="center">
+       <h1>PAYMENT</h1>
+
+    <label for="cardName"><b><font color="gold">NAME ON CARD</font></b></label>
+    <input type="text" placeholder="Enter Name" name="cardName" required>
+
+    <label for="cardNo"><b><font color="gold">CARD NUMBER</font></b></label>
+    <input type="text" placeholder="Enter cardNo" name="cardNo" required>
+  <div class="form-group row">
+                                    <label class="col-md-12"><b><font color="gold">CARD EXPIRY</font></b></label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="cc_exp_mo" size="0">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="cc_exp_yr" size="0">
+                                            <option>2022</option>
+                                            <option>2023</option>
+                                            <option>2024</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                            <option>2028</option>
+                                            <option>2029</option>
+                                            <option>2030</option>
+                                            <option>2031</option>
+                                            <option>2032</option>
+                                            <option>2033</option>
+                                            <option>2034</option>
+                                            <option>2035</option>
+                                            <option>2036</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required="" placeholder="CVC">
+                                    </div>
+                                </div>
+    <label for="amount"><b><font color="gold">TOTAL AMOUNT</font></b></label>
+    <input type="text" placeholder="mobileno" name="amount" required>&nbsp;
+    
+    <button type="submit" class="btn">PAY</button>
+  </form>
+</div>
+
+</body>
+</html>

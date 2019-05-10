@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+h1 {
+  background-color: skyblue;
+  padding: 17px 20px;
+}
+.text {
+  color: black ;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 500px;
+  width: 100%;
+  text-align: center;
+}
+.topnav a:hover {
+  background-color: light;
+  color: black;
+}
+.bg-img {
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="topnav">
+      <a href="Home.html">Home</a>
+      <a href="Admin.html">AdminLogin</a>
+      <a href="Cancel.html">CancelTicket</a>
+      <a href="BusInfo">About</a>
+    </div>
+</nav>
+<div class="w3-content w3-section" style="max-width:500px">
+  <div class="text"><b>BOOK MY BUS</b></div>
+  <img class="mySlides"  class="bg-img" src="https://previews.123rf.com/images/bwylezich/bwylezich1707/bwylezich170700139/82385103-volvo-9900-coach-of-drommebussen-drommebussen-is-a-collaboration-between-travelnet-and-nidaros-tours.jpg" width="1500" height="630">
+  
+  <img class="mySlides"  class="bg-img" src="https://www.nathaniel.ca/wp-content/uploads/2014/01/IMGP2118.jpg" width="1500" height="630">
+  
+  <img class="mySlides"  class="bg-img" src="https://www.tm4.com/wp-content/uploads/2013/12/Foton-bus-TM4-SUMO-HD-e1433866330726.jpg" width="1500" height="630">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
