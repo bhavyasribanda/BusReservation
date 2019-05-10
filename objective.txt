@@ -1,0 +1,24 @@
+                                          BUS RESERVATION SYSTEM
+                                                   (A Web Application)
+OBJECTIVE :
+         --> The aim of our project is to develop a Web application about online  ticket  booking system.Bus reservation system deals with the maintainance of record of details of each passenger who had reserved a seat for a journey.It also includes maintainance of information like schedule and details of each bus.
+          --> The user who wants to book the bus will use this interface to check the availability of buses.For example,if the user wants to travel from vijayawada to banglore then he neednot to go to busstation ,he can just register in our portal and check the availability of bus and can book the seats .This reduces the burden of a user and valuable time will be saved.
+             AGENDA :
+                            1. Ticket activities.
+                            2. Creation of a Customer id.
+                            3. Assign a bus Tickets according to customer’s demand.
+                            4. Advance bookings.
+                            5. BusTicket Cancellation.
+              ADVANTAGES :
+                            1.Performance: During past several decades, the records are supposed to be manually      handled for all activities. The  project manual handling of the record is   time consuming and highly prone   to error. To improve the performance of the bus Ticket Booking, the computerized system is to be undertaken. This project system is fully computerized and user friendly even that any of the customers can see the report and status of the Tickets.
+
+                            2.Efficiency:  The basic need of this application system is efficiency. The ticket booking application should be efficient so that whenever a new user submits his/her details the  project database is updated automatically. This system record will be useful for other users instantly. 
+
+                            3.Control: The complete control of the project is under the ticket booking  hands of authorized person who has the password to access this project and illegal access is not supposed to deal with. All the ticket booking  control is under the  project administrator and the other members have the  project rights to just see the records not to change any transaction or entry. 
+
+                            4.Security: Security is the main system criteria for the proposed system. Since illegal access may corrupt the  project database. So security has to be given in this project.
+        
+        -->At the end of this project development process ,we have applied the concepts like user interface design with html , css , javascript , jquery , bootstrap and server side programming by using servlets jsp , jstl.
+             
+
+             
